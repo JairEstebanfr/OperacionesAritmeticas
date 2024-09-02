@@ -1,4 +1,6 @@
-numero1 = float(input("Ingrese sumando 1: "))
-numero2 = float(input("Ingrese sumando 2: "))
-suma = numero1 + numero2
-print(f"{numero1} + {numero2} = {suma}")
+from OperacionesAritmeticas import OperacionesAritmeticas
+
+if __name__== '__main__':
+    operacion = OperacionesAritmeticas()
+    num1, num2 = operacion.IngresoNumeros()
+    print(f"{num1} + {num2} = {operacion.suma(num1,num2)}")
